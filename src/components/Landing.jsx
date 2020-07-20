@@ -1,15 +1,16 @@
 import React from "react";
-import HeaderThree from "./HeaderThree";
+import Header from "./Header";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import TextLoop from "react-text-loop";
-import FooterTwo from "./FooterTwo";
-import TabTwo from "./TabTwo";
-import ContactThree from "./ContactThree";
+import Footer from "./Footer";
+import PortfolioTab from "./PortfolioTab";
+import Contact from "./ContactDetails";
 import ServiceList from "./ServiceList";
 import BlogContent from "./BlogContent";
 import Slider from "react-slick";
 import { slickDot } from "react-slick";
+import AboutImage from "../assets/images/about/about-10.jpeg";
 const PostList = BlogContent.slice(0, 9);
 
 const SlideList = [
@@ -29,14 +30,14 @@ const Landing = () => {
       "Seeking an environment that would utilize my talent and nurture my knowledge in parallel, would provide an opportunity to grow both as a professional and as an individual. Also, at a micro level I want to learn and work on innovative and dynamic projects that will allow me to be better prepared to counter challenges and convert them into opportunities.";
   return (
     <div className="active-dark">
-      <HeaderThree homeLink="/" logo="symbol-dark" color="color-black" />
+      <Header homeLink="/" logo="symbol-dark" color="color-black" />
       {/* Start Slider Area   */}
       <div id="home" className="fix">
         <div className="slider-wrapper">
           {/* Start Single Slide */}
           {SlideList.map((value, index) => (
             <div
-              className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--33"
+              className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image"
               key={index}
             >
               <div className="container">
@@ -91,7 +92,7 @@ const Landing = () => {
                   <div className="thumbnail">
                     <img
                       className="w-100"
-                      src="./assets/images/about/about-10.jpeg"
+                      src={AboutImage}
                       alt="About Images"
                     />
                   </div>
@@ -104,7 +105,7 @@ const Landing = () => {
                       <p className="description">{description1}</p>
                     </div>
                     <div className="row mt--30">
-                      <TabTwo tabStyle="tab-style--1" />
+                      <PortfolioTab tabStyle="tab-style--1" />
                     </div>
                   </div>
                 </div>
@@ -195,7 +196,7 @@ const Landing = () => {
       {/* Start COntact Area */}
       <div id="contact" className="fix">
         <div className="rn-contact-area ptb--120 bg_color--1">
-          <ContactThree
+          <Contact
             contactImages="./assets/images/about/about-13.JPG"
             contactTitle="Let's connect"
           />
@@ -203,7 +204,7 @@ const Landing = () => {
       </div>
       {/* End COntact Area */}
 
-      <FooterTwo />
+      <Footer />
       {/* Start Back To Top */}
       <div className="backto-top">
         <ScrollToTop showUnder={160}>
