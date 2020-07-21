@@ -9,9 +9,10 @@ import Contact from "./ContactDetails";
 import ServiceList from "./ServiceList";
 import BlogContent from "./BlogContent";
 import Slider from "react-slick";
-import { slickDot } from "react-slick";
+import { slickDot } from "./slickdot";
 import AboutImage from "../assets/images/about/about-10.jpeg";
 import ContactImage from "../assets/images/about/about-13.JPG";
+
 
 const PostList = BlogContent.slice(0, 9);
 
@@ -155,7 +156,7 @@ const Landing = () => {
         <div className="container">
           <div className="row align-items-end">
             <div className="col-lg-6">
-              <div className="section-title text-left">
+              <div className="section-title text-center">
                 <h2>Travel Photography</h2>
                 <p>
                   There are many variations of passages of Lorem Ipsum
@@ -172,8 +173,7 @@ const Landing = () => {
                     <div className="thumbnail">
                       <a href="/blog-details">
                         <img
-                          src={`
-                          ../assets/images/blog/blog-${value.images}.jpg`}
+                          src={require(`../assets/images/blog/blog-${value.images}.jpg`)}
                           alt="Blog Images"
                         />
                       </a>
@@ -199,10 +199,7 @@ const Landing = () => {
       {/* Start COntact Area */}
       <div id="contact" className="fix">
         <div className="rn-contact-area ptb--120 bg_color--1">
-          <Contact
-            contactImages={ContactImage}
-            contactTitle="Let's connect"
-          />
+          <Contact contactImages={ContactImage} contactTitle="Let's connect" />
         </div>
       </div>
       {/* End COntact Area */}
