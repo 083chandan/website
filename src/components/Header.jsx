@@ -110,7 +110,7 @@ class HeaderThree extends React.Component {
             </div>
             <div className="header-btn">
               <a className="rn-btn">
-                <span>CV</span>
+                <span>Resume</span>
               </a>
             </div>
             {/* Start Humberger Menu  */}
