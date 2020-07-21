@@ -153,13 +153,26 @@ const Landing = () => {
 
       <div className="rn-blog-area pt--120 pb--140 bg_color--5">
         <div className="container">
-          <div className="row align-items-end">
-            <div className="col-lg-6">
-              <div className="section-title text-center">
-                <h2>Travel Photography</h2>
+          <div className="row ">
+            <div className="col-lg-12">
+              <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
+                <h1>Travel Photography</h1>
                 <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration.
+                  <h4>
+                    <TextLoop interval={3000}>
+                      <span>
+                        {" "}
+                        You'll get to see world from a diffrent
+                        perspective. croyez-moi!
+                      </span>
+                      <span>
+                        experience millions of other ways to live. Ich glaube!
+                      </span>
+                      <span> Breaking the ice has never been easier after travelling. mijn begrip! </span>
+                      <span> You’ll discover how resourceful you are when you’re exposed to new places, people and experiences. </span>
+                      <span> Learning is a strong reason why you should travel.  </span>
+                    </TextLoop>
+                  </h4>
                 </p>
               </div>
             </div>
@@ -183,9 +196,7 @@ const Landing = () => {
                         <a href="/blog-details">{value.title}</a>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn text-white" href="/blog-details">
-                          Read More
-                        </a>
+                        <a className="rn-btn text-white">Enjoy!</a>
                       </div>
                     </div>
                   </div>
