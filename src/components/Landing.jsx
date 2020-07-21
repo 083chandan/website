@@ -37,7 +37,7 @@ const Landing = () => {
           {/* Start Single Slide */}
           {SlideList.map((value, index) => (
             <div
-              className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image"
+              className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--33"
               key={index}
             >
               <div className="container">

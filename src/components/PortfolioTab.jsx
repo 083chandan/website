@@ -24,6 +24,7 @@ class PortfolioTab extends React.Component {
                     <Tab>{tab2}</Tab>
                     <Tab>{tab3}</Tab>
                     <Tab>{tab4}</Tab>
+                    <Tab>{tab5}</Tab>
                   </TabList>
 
                   <TabPanel>
