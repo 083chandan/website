@@ -1,4 +1,6 @@
 import React from "react";
+import Resume from "../assets/Documents/Resume.pdf";
+
 import {
   FaInstagram,
   FaFacebookF,
@@ -109,7 +111,7 @@ class HeaderThree extends React.Component {
               </ul>
             </div>
             <div className="header-btn">
-              <a className="rn-btn">
+              <a className="rn-btn" href={Resume} target="_blank">
                 <span>Resume</span>
               </a>
             </div>

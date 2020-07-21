@@ -13,7 +13,6 @@ import { slickDot } from "./slickdot";
 import AboutImage from "../assets/images/about/about-10.jpeg";
 import ContactImage from "../assets/images/about/about-13.JPG";
 
-
 const PostList = BlogContent.slice(0, 9);
 
 const SlideList = [
