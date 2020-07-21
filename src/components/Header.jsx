@@ -110,7 +110,7 @@ class HeaderThree extends React.Component {
               </ul>
             </div>
             <div className="header-btn">
-              <a className="rn-btn" >
+              <a className="rn-btn" href={'https://drive.google.com/file/d/1swp_VpQpOMo7PNgXA-MI-R83LNIRcEXD/view?usp=sharing'} target="_blank">
                 <span>Resume</span>
               </a>
             </div>
