@@ -1,15 +1,44 @@
 import React from "react";
+import * as emailjs from "emailjs-com";
 
 class ContactDetails extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      rnName: "",
-      rnEmail: "",
-      rnSubject: "",
-      rnMessage: "",
+  state = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
+
+  handleSubmit(e) {
+    e.preventDefault();
+    const { name ,email, subject, message } = this.state;
+    let templateParams = {
+      from_name: email,
+      to_name: "hiremath.d@northeastern.edu",
+      subject: subject,
+      message_html: message,
     };
+    emailjs.send(
+      "gmail",
+      "template_HM6s5d3M",
+       templateParams ,
+      "user_so3pT15hVKRJRPADoXEwM"
+    );
+    this.resetForm();
+   
   }
+  resetForm() {
+    this.setState({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  }
+  handleChange = (param, e) => {
+    this.setState({ [param]: e.target.value });
+  };
+  
   render() {
     return (
       <div className="contact-form--1">
@@ -19,21 +48,20 @@ class ContactDetails extends React.Component {
               <div className="section-title text-left mb--50">
                 <h2 className="title">{this.props.contactTitle}</h2>
                 <p className="description">
-                  Connect with me via phone: <a>+1 6173318690</a> <br /> email:
+                  Connect with me via phone: <a>+1 (617)331-8690</a> <br />{" "}
+                  email:
                   <a> hiremath.d@northeastern.edu</a>{" "}
                 </p>
               </div>
               <div className="form-wrapper">
-                <form>
+                <form onSubmit={this.handleSubmit.bind(this)}>
                   <label htmlFor="item01">
                     <input
                       type="text"
                       name="name"
                       id="item01"
-                      value={this.state.rnName}
-                      onChange={(e) => {
-                        this.setState({ rnName: e.target.value });
-                      }}
+                      value={this.state.name}
+                      onChange={this.handleChange.bind(this, "name")}
                       placeholder="Your Name *"
                     />
                   </label>
@@ -43,10 +71,8 @@ class ContactDetails extends React.Component {
                       type="text"
                       name="email"
                       id="item02"
-                      value={this.state.rnEmail}
-                      onChange={(e) => {
-                        this.setState({ rnEmail: e.target.value });
-                      }}
+                      value={this.state.email}
+                      onChange={this.handleChange.bind(this, "email")}
                       placeholder="Your email *"
                     />
                   </label>
@@ -56,10 +82,8 @@ class ContactDetails extends React.Component {
                       type="text"
                       name="subject"
                       id="item03"
-                      value={this.state.rnSubject}
-                      onChange={(e) => {
-                        this.setState({ rnSubject: e.target.value });
-                      }}
+                      value={this.state.subject}
+                      onChange={this.handleChange.bind(this, "subject")}
                       placeholder="Write a Subject"
                     />
                   </label>
@@ -68,10 +92,8 @@ class ContactDetails extends React.Component {
                       type="text"
                       id="item04"
                       name="message"
-                      value={this.state.rnMessage}
-                      onChange={(e) => {
-                        this.setState({ rnMessage: e.target.value });
-                      }}
+                      value={this.state.message}
+                      onChange={this.handleChange.bind(this, "message")}
                       placeholder="Your Message"
                     />
                   </label>
@@ -81,7 +103,7 @@ class ContactDetails extends React.Component {
                     value="submit"
                     name="submit"
                     id="mc-embedded-subscribe"
-                  >
+                  >  
                     Submit
                   </button>
                 </form>

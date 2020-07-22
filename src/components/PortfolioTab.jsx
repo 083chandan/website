@@ -5,11 +5,11 @@ import "react-sweet-progress/lib/style.css";
 
 class PortfolioTab extends React.Component {
   render() {
-    let tab1 = "Main skills",
-      tab4 = "Awards",
+    let tab1 = "Technical skills",
+      tab4 = "Certifications",
       tab3 = "Experience",
-      tab2 = "Education",
-      tab5 = "Certifications ";
+      tab2 = "Education ",
+      tab5 = "Awards ";
     const { tabStyle } = this.props;
     return (
       <div>
@@ -85,7 +85,7 @@ class PortfolioTab extends React.Component {
                             </h6>
                             <span> Northeastern University, Boston, MA</span>
                           </a>
-                          August - 2020
+                          May - 2021
                         </li>
                         <li>
                           <a>
@@ -110,7 +110,7 @@ class PortfolioTab extends React.Component {
                             <h6>Associate Software Engineer</h6>
                             <span> Accenture India</span>
                           </a>
-                          November 2017 - July2019
+                          November 2017 - July 2019
                         </li>
                       </ul>
                     </div>
@@ -120,21 +120,58 @@ class PortfolioTab extends React.Component {
                       <ul>
                         <li>
                           <a>
-                            Awwwards.com <span>- Winner</span>
+                            <h6>
+                              Oracle Cloud Infrastructure Foundations 2020
+                              Certified Associate
+                            </h6>
+                            <span>ORACLE</span>
+                          </a>
+                          July - 2020
+                        </li>
+                        <li>
+                          <a>
+                            <h6>Software Engineering Virtual Experience</h6>
+                            <span>JPMORGAN CHASE & CO</span>
+                          </a>
+                          May - 2020
+                        </li>
+                        <li>
+                          <a>
+                            <h6>Python Bootcamp</h6>
+                            <span>UDEMY</span>
+                          </a>
+                          June - 2020
+                        </li>
+                      </ul>
+                    </div>
+                  </TabPanel>
+                  <TabPanel>
+                    <div className="single-tab-content">
+                      <ul>
+                        <li>
+                          <a>
+                            <h6> Leadership Award </h6>
+                            <span>
+                              B V Bhoomaraddi College of Engineering &
+                              Technology
+                            </span>
                           </a>{" "}
-                          2019 - 2020
+                          March 2017
                         </li>
                         <li>
                           <a href="/service">
-                            CSS Design Awards <span>- Winner</span>
+                            <h6> Efficient Contributor </h6>
+
+                            <span>Accenture</span>
                           </a>{" "}
-                          2017 - 2018
+                          May 2019
                         </li>
                         <li>
                           <a href="/service">
-                            Design nominees <span>- site of the day</span>
+                            <h6>Promising Innovator</h6>
+                            <span>KPIT Technologies</span>
                           </a>{" "}
-                          2013- 2014
+                          August 2016
                         </li>
                       </ul>
                     </div>

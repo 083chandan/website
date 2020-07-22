@@ -84,9 +84,8 @@ class HeaderThree extends React.Component {
                 <li>
                   <a href="#about">About</a>
                 </li>
-
                 <li>
-                  <a href="#service">Portfolio</a>
+                  <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
                   <a href="#blog">Blog</a>
@@ -110,7 +109,13 @@ class HeaderThree extends React.Component {
               </ul>
             </div>
             <div className="header-btn">
-              <a className="rn-btn" href={'https://drive.google.com/file/d/1swp_VpQpOMo7PNgXA-MI-R83LNIRcEXD/view?usp=sharing'} target="_blank">
+              <a
+                className="rn-btn"
+                href={
+                  "https://drive.google.com/file/d/1swp_VpQpOMo7PNgXA-MI-R83LNIRcEXD/view?usp=sharing"
+                }
+                target="_blank"
+              >
                 <span>Resume</span>
               </a>
             </div>

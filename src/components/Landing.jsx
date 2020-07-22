@@ -27,7 +27,7 @@ const SlideList = [
 const Landing = () => {
   let title = "About Me",
     description =
-      "Currently pursuing a Master of Science in Computer Systems Engineering at Northeastern University with an emphasis on Object Oreinted Programming - Java, Web Development, Program Structures and Algorithms,  Data Networking  and Connected Devices",
+      "Currently pursuing a Master of Science in Computer Systems Engineering at Northeastern University with an emphasis on Object Oriented Programming - Java, Web Development, Program Structures and Algorithms,  Data Networking  and Connected Devices",
     description1 =
       "Seeking an environment that would utilize my talent and nurture my knowledge in parallel, would provide an opportunity to grow both as a professional and as an individual. Also, at a micro level I want to learn and work on innovative and dynamic projects that will allow me to be better prepared to counter challenges and convert them into opportunities.";
   return (
@@ -120,7 +120,7 @@ const Landing = () => {
       {/* End About Area */}
 
       {/* Start Service Area  */}
-      <div id="service" className="fix">
+      <div id="portfolio" className="fix">
         <div className="service-area creative-service-wrapper ptb--120 bg_color--5">
           <div className="container">
             <div className="row">
@@ -150,58 +150,69 @@ const Landing = () => {
         </div>
       </div>
       {/* End Service Area  */}
-
-      <div className="rn-blog-area pt--120 pb--140 bg_color--5">
-        <div className="container">
-          <div className="row ">
-            <div className="col-lg-12">
-              <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                <h1>Travel Photography</h1>
-                <p>
-                  <h4>
-                    <TextLoop interval={3000}>
-                      <span>
-                        {" "}
-                        You'll get to see world from a diffrent
-                        perspective. croyez-moi!
-                      </span>
-                      <span>
-                        experience millions of other ways to live. Ich glaube!
-                      </span>
-                      <span> Breaking the ice has never been easier after travelling. mijn begrip! </span>
-                      <span> You’ll discover how resourceful you are when you’re exposed to new places, people and experiences. </span>
-                      <span> Learning is a strong reason why you should travel.  </span>
-                    </TextLoop>
-                  </h4>
-                </p>
+      <div id="blog" className="fix">
+        <div className="rn-blog-area pt--120 pb--140 bg_color--5">
+          <div className="container">
+            <div className="row ">
+              <div className="col-lg-12">
+                <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
+                  <h1>Travel Photography</h1>
+                  <p>
+                    <h4>
+                      <TextLoop interval={3000}>
+                        <span>
+                          {" "}
+                          You'll get to see world from a diffrent perspective.
+                          croyez-moi!
+                        </span>
+                        <span>
+                          experience millions of other ways to live. Ich glaube!
+                        </span>
+                        <span>
+                          {" "}
+                          Breaking the ice has never been easier after
+                          travelling. mijn begrip!{" "}
+                        </span>
+                        <span>
+                          {" "}
+                          You’ll discover how resourceful you are when travel.
+                        </span>
+                        <span>
+                          {" "}
+                          Learning is a strong reason why you should travel.{" "}
+                        </span>
+                      </TextLoop>
+                    </h4>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="row mt--55 mt_sm--30 rn-slick-dot slick-space-gutter--15 slickdot--20 row--0">
-            <div className="col-lg-12">
-              <Slider {...slickDot}>
-                {PostList.map((value, i) => (
-                  <div className="blog blog-style--1" key={i}>
-                    <div className="thumbnail">
-                      <a href="/blog-details">
-                        <img
-                          src={require(`../assets/images/blog/blog-${value.images}.jpg`)}
-                          alt="Blog Images"
-                        />
-                      </a>
-                    </div>
-                    <div className="content">
-                      <p className="blogtype">{value.category}</p>
-                      <h4 className="title">
-                        <a href="/blog-details">{value.title}</a>
-                      </h4>
-                      <div className="blog-btn">
-                        <a className="rn-btn text-white">Enjoy!</a>
+            <div className="row mt--55 mt_sm--30 rn-slick-dot slick-space-gutter--15 slickdot--20 row--0">
+              <div className="col-lg-12">
+                <Slider {...slickDot}>
+                  {PostList.map((value, i) => (
+                    <div className="blog blog-style--1" key={i}>
+                      <div className="thumbnail">
+                        <a href="/blog-details">
+                          <img
+                            src={require(`../assets/images/blog/blog-${value.images}.jpg`)}
+                            alt="Blog Images"
+                          />
+                        </a>
+                      </div>
+                      <div className="content">
+                        <p className="blogtype">{value.category}</p>
+                        <h4 className="title">
+                          <a href="/blog-details">{value.title}</a>
+                        </h4>
+                        <div className="blog-btn">
+                          <a className="rn-btn text-white">Enjoy!</a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </Slider>
+                  ))}
+                </Slider>
+              </div>
             </div>
           </div>
         </div>
