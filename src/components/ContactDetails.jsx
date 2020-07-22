@@ -38,7 +38,7 @@ class ContactDetails extends React.Component {
   handleChange = (param, e) => {
     this.setState({ [param]: e.target.value });
   };
-  
+ 
   render() {
     return (
       <div className="contact-form--1">

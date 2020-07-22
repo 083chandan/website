@@ -119,7 +119,10 @@ class PortfolioTab extends React.Component {
                     <div className="single-tab-content">
                       <ul>
                         <li>
-                          <a>
+                          <a
+                            href="https://drive.google.com/file/d/1xPjCiq0C7eZvIPZbbnbD8rwk-VSEXAOc/view?usp=sharing"
+                            target="_blank"
+                          >
                             <h6>
                               Oracle Cloud Infrastructure Foundations 2020
                               Certified Associate
@@ -129,14 +132,20 @@ class PortfolioTab extends React.Component {
                           July - 2020
                         </li>
                         <li>
-                          <a>
+                          <a
+                            target="_blank"
+                            href="https://drive.google.com/file/d/1zVi6qnRYlo5ae7DaY3o0Njj5W8iWZi8U/view?usp=sharing"
+                          >
                             <h6>Software Engineering Virtual Experience</h6>
                             <span>JPMORGAN CHASE & CO</span>
                           </a>
                           May - 2020
                         </li>
                         <li>
-                          <a>
+                          <a
+                            href="https://drive.google.com/file/d/1_yResjgTAY97rdzs_AcNb7n_6BuBYf4v/view?usp=sharing"
+                            target="_blank"
+                          >
                             <h6>Python Bootcamp</h6>
                             <span>UDEMY</span>
                           </a>
@@ -149,7 +158,10 @@ class PortfolioTab extends React.Component {
                     <div className="single-tab-content">
                       <ul>
                         <li>
-                          <a>
+                          <a
+                            target="_blank"
+                            href="https://drive.google.com/file/d/1wmhOzyxQG_wA2C5GylofianFHBPSnSrn/view?usp=sharing"
+                          >
                             <h6> Leadership Award </h6>
                             <span>
                               B V Bhoomaraddi College of Engineering &
@@ -159,7 +171,10 @@ class PortfolioTab extends React.Component {
                           March 2017
                         </li>
                         <li>
-                          <a href="/service">
+                          <a
+                            target="_blank"
+                            href="https://drive.google.com/file/d/1-WITZtQxjwKxEh3anC9WTfHfSJPacz9D/view?usp=sharing"
+                          >
                             <h6> Efficient Contributor </h6>
 
                             <span>Accenture</span>
@@ -167,7 +182,10 @@ class PortfolioTab extends React.Component {
                           May 2019
                         </li>
                         <li>
-                          <a href="/service">
+                          <a
+                            target="_blank"
+                            href="https://drive.google.com/file/d/1kumz5dG87gm6e9bNksGj71mc-Wdb7Wwm/view?usp=sharing"
+                          >
                             <h6>Promising Innovator</h6>
                             <span>KPIT Technologies</span>
                           </a>{" "}
